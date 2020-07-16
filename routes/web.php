@@ -18,7 +18,6 @@ Route::get('/', 'indexController@index');
 
 Route::get('/test', function()
 {
-    $products = Product::with('category.subCategories')->get();
-    dd($products);
+    return responce()->json(Product::get());
 });
 
