@@ -1,5 +1,5 @@
 <?php
-
+use App\Subcategory;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -13,5 +13,8 @@ class DatabaseSeeder extends Seeder
     {
          $this->call(UserTableSeeder::class);
          $this->call(BlogSeeder::class);
+         $this->call(CategorySeeder::class);
+         $this->call(ProductSeeder::class);
+         $this->call(SubcategorySeeder::class);
     }
 }
