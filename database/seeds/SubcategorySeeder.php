@@ -1,5 +1,6 @@
 <?php
 use App\Product;
+use App\Category;
 use App\Subcategory;
 use Illuminate\Database\Seeder;
 
